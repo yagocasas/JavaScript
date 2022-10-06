@@ -11,8 +11,9 @@ function averageWord(array) {
     for (let i = 0; i < array.length; i++) {
         if (typeof array[i] === 'number') {
             sum += array[i];
-        } else { // if (typeof array[i] === 'string') {
-                sum += array[i].length;
+        } else if (typeof array[i] === 'string')  
+
+              {  sum += array[i].length;
             }
         } return sum;
     }
