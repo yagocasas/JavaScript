@@ -20,7 +20,7 @@ function repeatCounter(array) {
   let result = {};
   for (let i = 0; i < array.length; i++) {
     const element = array[i];
-    if (element in result) {
+    if (element in result) {  //tenemos un in
       result[element]++;
     } else {
       result[element] = 1;
