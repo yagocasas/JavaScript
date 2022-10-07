@@ -27,4 +27,8 @@ for (let i = 0; i < alumns.length; i++) {
 
 console.log(alumns);
 
+// solución óptima de Adolfo, para mí
 
+// //for(const alumno of alumnos) {
+// 	alumno.T1 && alumno.T2 || alumno.T1 && alumno.T3 || alumno.T2 && alumno.T3 ? alumno.isApproved = true : alumno.isApproved = false;
+// }
