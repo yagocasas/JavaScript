@@ -6,10 +6,8 @@
 const products = ['Camiseta de Pokemon', 'Pantalón coquinero', 
 'Gorra de gansta', 'Camiseta de Basket', 'Cinrurón de Orión', 'AC/DC Camiseta']
 
-products.forEach (function(elemento, index, array) {
+products.forEach (function showProducts(elemento, index, array) {
     if (elemento.includes('Camiseta')) {
         console.log(elemento);
     }
 } )
-
- 
