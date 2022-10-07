@@ -22,7 +22,7 @@ const duplicates = [
     for (let i = 0; i < array.length; i++) {
       for (let j = i + 1; j < array.length; j++) {
         if (array[i] === array[j]) {
-          duplicates.splice(j, 1); //la j va a ser la posición del elemento duplicado
+          array.splice(j, 1); //la j va a ser la posición del elemento duplicado
           j--; //contrarrestamos la posición de j porque al eliminar un elemento, la matriz ha cambiado
         }
       }
