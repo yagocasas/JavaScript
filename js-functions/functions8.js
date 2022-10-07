@@ -29,3 +29,5 @@ function repeatCounter(array) {
   return result;
 }
 console.log(repeatCounter(counterWords));
+
+// Podemos utilizar también para la comprobación counter.hasOwnProperty(param[i])
