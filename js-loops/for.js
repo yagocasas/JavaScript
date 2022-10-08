@@ -15,7 +15,7 @@ const placesToTravel = [
 
 for (let i = 0; i < placesToTravel.length; i++) {
   const element = placesToTravel[i];
-    if(element['id'] === 11 || element['id'] === 40) { //utilizamos '.' para acceder a la propiedad y si utilizamos [''] (ojo!!!con comillas)
+    if(element['id'] === 11 || element['id'] === 40) { //utilizamos . para acceder a la propiedad y si utilizamos [''] (ojo!!!con comillas)
         placesToTravel.splice(i, 1)
     }
 }
