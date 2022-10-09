@@ -6,10 +6,10 @@
 const products = ['Camiseta de Pokemon', 'Pantalón coquinero', 
 'Gorra de gansta', 'Camiseta de Basket', 'Cinrurón de Orión', 'AC/DC Camiseta']
 
-function showProducts() {
-    for (let i = 0; i < products.length; i++) {
-      if (products[i].includes("Camiseta")) {
-        console.log(products[i]);
+function showProducts(array) {
+    for (let i = 0; i < array.length; i++) {
+      if (array[i].includes("Camiseta")) {
+        console.log(array[i]);
       }
     }
   }
