@@ -66,3 +66,21 @@ for (const user of users) {
   }
 }
 console.log(accumulator);
+
+//ordena de mayor a menor los resultados
+
+// let accumulatorArray = [];
+
+// for (const key in accumulator) {
+//     let temporal = [key, accumulator[key]];
+//     accumulatorArray.push(temporal)
+// };
+// console.log(accumulatorArray);
+// const sorted = accumulatorArray.sort(function(a, b) {
+//     return a[1], b[1];
+// });
+// sorted.reverse;
+// console.log(sorted);
+// console.log(Object.fromEntries(sorted));
+
+
