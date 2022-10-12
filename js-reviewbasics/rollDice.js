@@ -6,6 +6,6 @@
 //  información sobre la función de javascript Math.random();
 
 function rollDice (nSides) {
-    return Math.floor((Math.random() * nSides) + 1)
+    return Math.floor((Math.random() * nSides) + 1);
 }
 console.log(rollDice(6));
