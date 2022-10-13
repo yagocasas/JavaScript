@@ -39,7 +39,7 @@ const countries2 = [
 	{title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=5'}
 ];
 
-const lista$$ = document.createElement('ul');
+// const lista$$ = document.createElement('ul');
 
 for (const country2 of countries2) {
     let countryDiv$$ = document.createElement('div');
@@ -69,7 +69,10 @@ button$$.addEventListener('click', function() {
     let allDivs$$ = document.querySelectorAll('div');
     if(allDivs$$.length === 6)allDivs$$[allDivs$$.length - 1].remove();
     
-})
+}) //si quisiera seleccionar unicamente los div de esta lista, le doy una clase y selecciono la clase
+//country2.classList.add("imagenes");
+//const allDivs$$ = document.querySelectorAll(".imagenes");
+
 document.body.appendChild(button$$);
 
 // 1.6 Basandote en el ejercicio anterior. Crea un botón para cada uno de los
@@ -88,3 +91,4 @@ let firstDiv = divs$$[0];
         div.remove();
     })
  }
+//ver soluciones de Santi
