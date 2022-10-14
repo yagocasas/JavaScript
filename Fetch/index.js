@@ -69,12 +69,26 @@ const text = () => {
       p$$.textContent = `El nombre ${input$$.value}`;
 
       for (const country of person.country) {
-        p$$.textContent += ` tiene un ${Math.floor(
+
+        if(person.country.indexOf(country) === 0) {
+           p$$.textContent += ` tiene un ${Math.floor(
           country.probability * 100
         )} por ciento de probabilidades de ser de ${country.country_id}`;
+
+        } else if (person.country.indexOf(country) !== person.country.length - 1) {
+          p$$.textContent += `, un ${Math.floor(
+            country.probability * 100
+          )} por ciento de probabilidades de ser de ${country.country_id}`;
+
+        } else {
+          p$$.textContent += ` y un ${Math.floor(
+            country.probability * 100
+          )} por ciento de probabilidades de ser de ${country.country_id}.`;
+        }
+       
       }
 
-      eliminar$$.addEventListener('click', () => removeP(elements));
+      eliminar$$.addEventListener('click', () => removeP([p$$, eliminar$$]));
 
       document.body.appendChild(p$$);
       document.body.appendChild(eliminar$$);
