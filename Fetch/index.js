@@ -74,7 +74,7 @@ const text = () => {
         )} por ciento de probabilidades de ser de ${country.country_id}`;
       }
 
-      eliminar$$.addEventListener('click', () => removeP([p$$, eliminar$$]));
+      eliminar$$.addEventListener('click', () => removeP(elements));
 
       document.body.appendChild(p$$);
       document.body.appendChild(eliminar$$);
